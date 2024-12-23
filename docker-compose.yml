@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  onu-notifier:
+    build: .
+    volumes:
+      - ./app/database.sqlite:/app/database.sqlite
+    restart: always
