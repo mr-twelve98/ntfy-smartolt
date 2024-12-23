@@ -1,5 +1,8 @@
 FROM python:3.10-slim
 
+# Install dependencies including supervisor
+RUN apt-get update && apt-get install -y supervisor
+
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
